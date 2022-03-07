@@ -1,0 +1,29 @@
+
+<div class="container">
+
+    <div class="card my-2" >
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let per of personas">
+            <th scope="row">{{per.id}}</th>
+            <td>{{per.nombre}}</td>
+            <td>{{per.apellido}}</td>
+          </tr>
+    
+        </tbody>
+      </table>
+
+    </div>
+<p *ngIf="isUsuario">Informacion sensible</p>
+<p *ngIf="!isUsuario">Informacion publica</p>
+<div >
+    <p></p>
+</div>
+</div>

@@ -3,7 +3,7 @@
     <form #formUsuario ="ngForm">
         <div class="mb-3">
             <label class="form-label">Nombre</label>
-            <input class="form-control" name="nombre"[{ngModel}]="usuario.nombre" required/>
+            <input class="form-control" name="nombre"[(ngModel)]="usuario.nombre" required/>
         </div>
         
         <div class="mb-3">

@@ -10,6 +10,7 @@ import { EditarUsuarioComponent } from './core/components/editar-usuario/editar-
 
 import { FormControl, FormGroup, FormsModule } from '@angular/forms';
 import {  } from '@angular/forms';
+import { RegstroUsuarioComponent } from './core/components/regstro-usuario/regstro-usuario.component';
 
 FormControl
 @NgModule({
@@ -18,7 +19,8 @@ FormControl
     HeaderComponent,
     EstructuraComponent,
     FooterComponent,
-    EditarUsuarioComponent
+    EditarUsuarioComponent,
+    RegstroUsuarioComponent
   ],
   imports: [
     BrowserModule,

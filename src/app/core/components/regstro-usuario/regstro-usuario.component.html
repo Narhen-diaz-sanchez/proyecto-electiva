@@ -1,0 +1,26 @@
+<div class="container my-2">
+    
+    <form #formUsuario ="ngForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label >Nombre</label>
+            <input type="text" class="form-control" name="nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre" [minlength]="5" [maxlength]="20" required />
+            <span *ngIf="nombre.touched && !nombre.valid" >Error</span>
+        </div>
+        
+        <div class="mb-3">
+            <label >Apellido</label>
+            <input type="text" class="form-control" name="apellido" #apellido="ngModel" [(ngModel)]="usuario.apellido" [minlength]="5" [maxlength]="20" required />
+            <span *ngIf="apellido.touched && !apellido.valid" >Error</span>
+        </div>
+
+        <div class="mb-3">
+            <label >Edad</label>
+            <input type="number" class="form-control" name="edad" #edad="ngModel" [(ngModel)]="usuario.edad" [minlength]="1" [maxlength]="2" required />
+            <span *ngIf="edad.touched && !edad.valid" >Error</span>
+        </div>
+
+        <div class="mb-3">
+            <input type="submit" class="btn btn-success my-2" value="Registrar">
+        </div>
+    </form>
+</div>
